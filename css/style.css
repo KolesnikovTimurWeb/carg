@@ -1537,8 +1537,15 @@ header{
 	line-height: 100%; /* 88px */
 	letter-spacing: -2.64px;
 }
-
-
+.ship img{
+	width: 100%;
+	object-fit: cover;
+}
+@media screen and (min-width: 1920px) {
+	.container{
+		max-width: 1920px;
+	}
+}
 @media screen and (max-width: 1900px) {
 	.header-phone-link{
 		padding: 15px;
