@@ -28,12 +28,17 @@ let contactTextCh = document.querySelector('.contact-ch-text')
 
 contactButtonUa.addEventListener('click', function () {
 	contactUa.classList.add('active')
+	contactTextUa.classList.add('active')
+	contactTextCh.classList.remove('active')
 	contactButtonUa.classList.add('active')
 	contactButtonCh.classList.remove('active')
 	contactCh.classList.remove('active')
 })
 contactButtonCh.addEventListener('click', function () {
 	contactUa.classList.remove('active')
+	contactTextUa.classList.remove('active')
+	contactTextCh.classList.add('active')
+
 	contactButtonUa.classList.remove('active')
 	contactButtonCh.classList.add('active')
 	contactCh.classList.add('active')
