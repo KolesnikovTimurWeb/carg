@@ -408,6 +408,7 @@ header{
 	font-family: "Bebas Neue";
 	font-size: 118px;
 	font-weight: 700;
+	line-height: 100%;
 	letter-spacing: -3.84px;
 }
 .benefits-title p{
@@ -1498,9 +1499,24 @@ header{
 .contact-ch{
 	display: none;
 }
+.contact-item{
+	display: flex;
+	flex-direction: column;
+}
+.contact-ch-text.active,
+.contact-ua-text.active{
+	display: block;
+}
+.contact-ch-text,
+.contact-ua-text{
+	display: none;
+}
 .contact-text button:hover{
 	opacity: 0.6;
 	transition: .3s ease-in-out;
+}
+.contact-buttons{
+	margin-bottom: 50px;
 }
 .contact-text button{
 	transition: .3s ease-in-out;
@@ -1530,6 +1546,8 @@ header{
 	letter-spacing: -0.48px;
 }
 .contact-text h2{
+	margin-top: 50px;
+
 	color: #1E1E1E;
 	font-family: "Bebas Neue";
 	font-size: 88px;
@@ -1537,13 +1555,17 @@ header{
 	line-height: 100%; /* 88px */
 	letter-spacing: -2.64px;
 }
+.contact-img img{
+	width: 100%;
+	object-fit: cover;
+}
 .ship img{
 	width: 100%;
 	object-fit: cover;
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
 	.container{
-		max-width: 1920px;
+		max-width: 1440px;
 	}
 }
 @media screen and (max-width: 1900px) {
@@ -1616,3 +1638,5 @@ header{
 	}
 
 }
+
+
